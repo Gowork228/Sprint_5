@@ -14,6 +14,8 @@ class RegisterLocators:
 
     RL_PROFILE_BUTTON = (By.XPATH, ".//p[text()='Личный Кабинет']")
 
+    RL_ERROR_MESSAGE = (By.XPATH, ".//p[contains(@class, 'input__error')]")
+
 class LoginLocators:
 
     LL_EMAIL_FIELD = (By.XPATH, ".//label[text()='Email']//parent::*/input[@type='text' and @name='name']")
