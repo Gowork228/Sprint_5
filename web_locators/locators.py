@@ -44,6 +44,8 @@ class MainPageLocators:
 
     MP_LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти в аккаунт']")
 
+    MP_PROFILE_BUTTON = (By.XPATH, ".//p[text()='Личный Кабинет']")
+
 class ResetPasswordLocators:
 
     RPL_EMAIL_FIELD = (By.XPATH, ".//label[text()='Email']//parent::*/input[@type='text' and @name='name']")
