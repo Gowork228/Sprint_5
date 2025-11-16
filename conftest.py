@@ -25,5 +25,5 @@ def valid_login(driver):
     driver.find_element(*LoginLocators.LL_PASSWORD_FIELD).send_keys(MyTestData.PASSWORD)
     driver.find_element(*LoginLocators.LL_LOGIN_BUTTON).click()
 
-    WebDriverWait(driver,5).until(EC.presence_of_element_located(MainPageLocators.MP_LOGIN_BUTTON))
+    WebDriverWait(driver,5).until(EC.presence_of_element_located(MainPageLocators.MP_BREAD_SECTION))
     return driver

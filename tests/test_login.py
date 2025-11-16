@@ -25,7 +25,7 @@ class TestLogin:
         assert driver.current_url == UrlsForTests.BASE_URL
 
     #  Вход через кнопку 'Личный кабинет'
-    def test_login_valid_data_use_lk_button_successes(self, driver):
+    def test_login_valid_data_use_profile_button_successes(self, driver):
         driver.get(UrlsForTests.BASE_URL)
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable(MainPageLocators.MP_PROFILE_BUTTON)).click()
         driver.find_element(*MainPageLocators.MP_PROFILE_BUTTON).click()
