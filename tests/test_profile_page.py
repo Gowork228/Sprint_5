@@ -7,7 +7,6 @@ from test_data.urls import UrlsForTests
 from test_data.test_data import *
 
 from web_locators.locators import *
-import time
 
 class TestProfilePage:
 
